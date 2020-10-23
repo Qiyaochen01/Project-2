@@ -1,0 +1,43 @@
+from random import randrange
+def profit (LA1,LA2,CA1,CA2):
+    # LA1 is the location of A1
+    # CA1 is the cost of coffee at A1
+    distance = "0123456789"
+    i = randrange(0, 10)
+
+    randomdistance = distance[i]
+    T = int(10)
+    x = (int(randomdistance))
+    if int(randomdistance) < (LA1):
+        Finaldistance=int(LA1)-x
+    if int(randomdistance) <= (LA2):
+        (Finaldistance2)= int(LA2)-x
+    else:
+        "Idk if this is needed"
+    scoreA1=(10-Finaldistance)+3*(6-CA1)
+    scoreA2 = (10 - Finaldistance2) + 3 * (6 - CA2)
+    print("ScoreA1 is:",scoreA1,"\n"+"ScoreA2 is:",scoreA2)
+    return randomdistance
+def profit2 (LB1, LB2, CB1, CB2):
+    # LB1 is the location of B1
+    # CB1 is the cost of coffee at B1
+    distance = "0123456789"
+    i = randrange(0, 10)
+    randomdistance = distance[i]
+    y=int(randomdistance)
+    if int(randomdistance) < LB1:
+        Finaldistance3 = LB2 - y
+    if int(randomdistance)<=LB2:
+        Finaldistance4 = LB2 - y
+    else:
+        print("I am not taking this customer")
+
+    scoreB1 = (10 - Finaldistance3) + 3 * (6 - CB1)
+    scoreB2 = (10 - Finaldistance4) + 3 * (6 - CB2)
+    print("ScoreB1 is:", scoreB1, "\n"+"ScoreB2 is:", scoreB2)
+    return randomdistance
+
+
+if __name__ == '__main__':
+    profit(9,9,4,4)
+    profit2(9,9,2,3)
