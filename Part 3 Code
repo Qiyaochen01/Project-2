@@ -17,6 +17,8 @@ def profit (LA1,LA2,CA1,CA2):
     scoreA1=(10-Finaldistance)+3*(6-CA1)
     scoreA2 = (10 - Finaldistance2) + 3 * (6 - CA2)
     print("ScoreA1 is:",scoreA1,"\n"+"ScoreA2 is:",scoreA2)
+    Final=(scoreA1+scoreA2)
+    print("Score:",Final)
     return randomdistance
 def profit2 (LB1, LB2, CB1, CB2):
     # LB1 is the location of B1
@@ -34,6 +36,8 @@ def profit2 (LB1, LB2, CB1, CB2):
     scoreB1 = (10 - Finaldistance3) + 3 * (6 - CB1)
     scoreB2 = (10 - Finaldistance4) + 3 * (6 - CB2)
     print("ScoreB1 is:", scoreB1, "\n"+"ScoreB2 is:", scoreB2)
+    Final=(scoreB1+scoreB2)
+    print("Score:",Final)
     return randomdistance
 
 
