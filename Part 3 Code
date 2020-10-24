@@ -13,8 +13,7 @@ def profit (LA1,LA2,CA1,CA2):
         Finaldistance=int(LA1)-x
     if int(randomdistance) <= (LA2):
         (Finaldistance2)= int(LA2)-x
-    else:
-        "Idk if this is needed"
+  
     scoreA1=(10-Finaldistance)+3*(6-CA1)
     scoreA2 = (10 - Finaldistance2) + 3 * (6 - CA2)
     print("ScoreA1 is:",scoreA1,"\n"+"ScoreA2 is:",scoreA2)
@@ -30,8 +29,7 @@ def profit2 (LB1, LB2, CB1, CB2):
         Finaldistance3 = LB2 - y
     if int(randomdistance)<=LB2:
         Finaldistance4 = LB2 - y
-    else:
-        print("I am not taking this customer")
+
 
     scoreB1 = (10 - Finaldistance3) + 3 * (6 - CB1)
     scoreB2 = (10 - Finaldistance4) + 3 * (6 - CB2)
