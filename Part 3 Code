@@ -1,3 +1,4 @@
+#Jiajie Lin Part 3
 from random import randrange
 def profit (LA1,LA2,CA1,CA2):
     # LA1 is the location of A1
